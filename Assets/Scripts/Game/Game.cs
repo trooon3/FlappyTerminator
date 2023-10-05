@@ -6,6 +6,7 @@ public class Game : MonoBehaviour
 {
     [SerializeField] private Terminator _terminator;
     [SerializeField] private EnemySpawner _enemySpawner;
+    [SerializeField] private EnemySpawner _disketSpawner;
     [SerializeField] private StartScreen _startScreen;
     [SerializeField] private GameOverScreen _gameOverScreen;
 
@@ -34,6 +35,7 @@ public class Game : MonoBehaviour
     {
         _gameOverScreen.Close();
         _enemySpawner.ResetPool();
+        _disketSpawner.ResetPool();
         StartGame();
     }
 
