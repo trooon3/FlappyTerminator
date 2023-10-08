@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Terminator : MonoBehaviour
 {
     [SerializeField] private Bullet _bullet;
-    [SerializeField] private Transform _bulletStartPosition;
+    [SerializeField] private Transform _shootPoint;
     private TerminatorMover _mover;
     private int _score = 0;
 
@@ -42,7 +42,7 @@ public class Terminator : MonoBehaviour
 
     private void Shoot(Bullet bullet)
     {
-        Instantiate(_bullet, _bulletStartPosition.position, transform.rotation);
+        Instantiate(_bullet, _shootPoint.position, transform.rotation);
     }
 
     public  void Die()

@@ -14,7 +14,7 @@ public class TerminatorCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<ScoreUpZone>())
+        if (TryGetComponent(out ScoreUpZone scoreZone))
         {
             _terminator.IncreaseScore();
         }

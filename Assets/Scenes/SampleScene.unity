@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bullet: {fileID: -6702380774822721926, guid: be086e577fdb3bf429a94e3b172425dc, type: 3}
-  _bulletStartPosition: {fileID: 1920704042}
+  _shootPoint: {fileID: 1920704042}
 --- !u!114 &532542001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,8 +736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 1275629905}
   _capacity: 10
-  __template: {fileID: 3720690570447097968, guid: 6e3f624ef4136d348862475023e78801, type: 3}
-  _secondsBetweenSpawn: 2
+  _template: {fileID: 3720690570447097968, guid: 6e3f624ef4136d348862475023e78801, type: 3}
+  _delay: 2
   _minSpawnPositionY: -4
   _maxSpawnPositionY: 4
 --- !u!1 &963194225
@@ -858,6 +858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _terminator: {fileID: 532542000}
   _enemySpawner: {fileID: 889008348}
+  _disketSpawner: {fileID: 1746979760}
   _startScreen: {fileID: 1959716074}
   _gameOverScreen: {fileID: 1480190833}
 --- !u!1 &1046226972
@@ -1481,8 +1482,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 1275629905}
   _capacity: 10
-  __template: {fileID: 5949028359197826330, guid: 688d06f37c4fd574dbde84e894e0805a, type: 3}
-  _secondsBetweenSpawn: 2
+  _template: {fileID: 5949028359197826330, guid: 688d06f37c4fd574dbde84e894e0805a, type: 3}
+  _delay: 2
   _minSpawnPositionY: -4
   _maxSpawnPositionY: 4
 --- !u!1 &1920704041

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : ObjectPool
 {
-    [SerializeField] private GameObject __template;
-    [SerializeField] private float _secondsBetweenSpawn;
+    [SerializeField] private GameObject _template;
+    [SerializeField] private float _delay;
     [SerializeField] private float _minSpawnPositionY;
     [SerializeField] private float _maxSpawnPositionY;
     
@@ -13,14 +13,14 @@ public class EnemySpawner : ObjectPool
 
     private void Start()
     {
-        Initialize(__template);
+        Initialize(_template);
     }
 
     private void Update()
     {
         _elapsedTime += Time.deltaTime;
 
-        if (_elapsedTime > _secondsBetweenSpawn)
+        if (_elapsedTime > _delay)
         {
             if (TryGetObgect(out GameObject enemy))
             {

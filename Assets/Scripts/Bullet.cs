@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Terminator>() || collision.GetComponent<ScoreUpZone>())
+        if (TryGetComponent(out Terminator terminator) || TryGetComponent(out ScoreUpZone scoreZone))
         {
             return;
         }

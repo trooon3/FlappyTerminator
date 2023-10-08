@@ -8,7 +8,7 @@ public class ScoreUpZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Terminator>())
+        if (TryGetComponent(out Terminator terminator))
         {
           Die();
         }
